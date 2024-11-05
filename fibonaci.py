@@ -1,12 +1,11 @@
-# Number of terms to generate in the Fibonacci series
-num_terms = 10
-
-# Initialize the first two Fibonacci numbers
-a, b = 0, 1
-
-# Print the Fibonacci series
-print("Fibonacci Series:")
-for _ in range(num_terms):
-    print(a, end=' ')  # Print the current Fibonacci number
-   
-    a,b=b,a+b # Update a and b for the next iteration
+num = int(input("Enter any number:"))
+n1,n2=0,1
+sum=0
+if num<=0:
+    print("please enter greater than 0")
+else:
+    for i in range(0,num):
+        print(sum,end=" ")
+        n1=n2
+        n2=sum
+        sum=n1+n2
